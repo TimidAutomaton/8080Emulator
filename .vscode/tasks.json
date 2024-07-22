@@ -1,0 +1,71 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                //"-I${workspaceFolder}\\include\\glad",
+				//"-I${workspaceFolder}\\include\\KHR",
+				"-I${workspaceFolder}\\include\\",
+                "-I${workspaceFolder}\\include\\GL\\",
+                "-I${workspaceFolder}\\include\\imgui\\",
+                "-I${workspaceFolder}\\",
+
+
+                "${workspaceFolder}\\lib\\glfw3.dll",
+                "${workspaceFolder}\\lib\\libglfw3.a",
+                "${workspaceFolder}\\lib\\libglfw3dll.a",
+                "-L${workspaceFolder}\\lib\\",
+
+                
+
+                //"-L${workspaceFolder}\\lib\\",
+
+                //"-lGlew32",
+
+                "${workspaceFolder}\\src\\glad.c",
+
+                "${workspaceFolder}\\lib\\imgui\\imgui.cpp",
+                "${workspaceFolder}\\lib\\imgui\\imgui_draw.cpp",
+                "${workspaceFolder}\\lib\\imgui\\imgui_tables.cpp",
+                "${workspaceFolder}\\lib\\imgui\\imgui_widgets.cpp",
+                "${workspaceFolder}\\lib\\imgui\\imgui_demo.cpp",
+                "${workspaceFolder}\\lib\\imgui\\imgui_impl_opengl3.cpp",
+                "${workspaceFolder}\\lib\\imgui\\imgui_impl_glfw.cpp",
+
+                "${workspaceFolder}\\HexByte.cpp",
+                "${workspaceFolder}\\intel8080.cpp",
+                "${workspaceFolder}\\ALU.cpp",
+                "${workspaceFolder}\\GUI.cpp",
+                "${workspaceFolder}\\input.cpp",
+
+                "-o",
+                "${workspaceFolder}\\${fileBasenameNoExtension}.exe",
+
+                "-lglfw3",
+                "-lgdi32",
+                "-lopengl32"//,
+                //"-limgui"
+                //"-static",
+                //"-O1"
+            ],
+            "options": {
+                "cwd": "C:\\msys64\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group":"build",
+              
+            //"group":{
+            //    "kind": "build"//,
+            //    //"isDefault": true
+           // },
+            "detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+        }
+    ],
+    "version": "2.0.0"
+}
