@@ -8,16 +8,16 @@ The program expects there to be the Space Invader rom files invaders.h, invaders
 8080Emulator.cpp is where the main function is. I don't think I planned it that way or I would have named it main.cpp.
 The whole program is basically a giant switch case statement that runs each opcode when it gets fed in. 
 Most cycles are (if I remember right...):
-  Get time/use time difference to run at correct frequency
-  if running a cpu cycle
-    Check for special flag (interrupt, etc)
-    Read byte(s)
-    Execute function
+  -Get time/use time difference to run at correct frequency
+  -if running a cpu cycle
+    --Check for special flag (interrupt, etc)
+    --Read byte(s)
+    --Execute function
 
-  if enough time passes to update display
-    get input
-    update display
-    draw interface
+  -if enough time passes to update display
+    --get input
+    --update display
+    --draw interface
 
 Most of the weird flags are for debug interfaces (pausing, running individual frames, etc)
 
