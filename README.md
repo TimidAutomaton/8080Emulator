@@ -1,6 +1,6 @@
 # 8080 Emulator
 
-A bare bones Intel 8080 emulator, not much else to say! 
+A bare bones Intel 8080 emulator, not much else to say! Just designed to play Space Invaders
 
 This expects there to be the Space Invader rom files invaders.h, invaders.g, invaders.f, and invaders.e in the root directory. These aren't included and must be sourced by the user.
 
